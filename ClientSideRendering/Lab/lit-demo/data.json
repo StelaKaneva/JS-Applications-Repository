@@ -1,0 +1,24 @@
+[
+    {
+        "title": "First Article",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "author": "John Smith",
+        "color": "red",
+        "comments": []
+    },
+    {
+        "title": "Second Article",
+        "content": "Ipsum ea minima sed suscipit debitis fugiat voluptas et.",
+        "author": "Peter Johnson",
+        "color": "green",
+        "disabled": false,
+        "comments": []
+    },
+    {
+        "title": "Third Article",
+        "content": "Explicabo corrupti accusamus voluptate, ut, non provident ipsam soluta enim exercitationem dignissimos rerum.",
+        "author": "Marie Currie",
+        "color": "blue",
+        "comments": []
+    }
+]
