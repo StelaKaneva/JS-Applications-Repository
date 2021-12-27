@@ -1,12 +1,13 @@
 import { render, page } from './lib.js'
 import { homePage } from './views/home.js';
+import { createPage } from './views/create.js';
 import { getUserData } from './util.js';
 import { logout } from './api/data.js';
 import { loginPage } from './views/login.js';
 import { registerPage } from './views/register.js';
-
-import * as api from './api/data.js';
-window.api = api;
+import { detailsPage } from './views/details.js';
+import { editPage } from './views/edit.js';
+import { profilePage } from './views/profile.js';
 
 const root = document.querySelector('main');
 const nav = document.querySelector('nav');
@@ -16,6 +17,10 @@ page(decorateContext);
 page('/', homePage);
 page('/login', loginPage);
 page('/register', registerPage);
+page('/create', createPage);
+page('/details/:id', detailsPage);
+page('/edit/:id', editPage);
+page('/profile', profilePage);
 
 updateUserNav();
 page.start();
